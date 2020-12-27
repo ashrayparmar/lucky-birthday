@@ -12,9 +12,15 @@ function clickHandler() {
     var month = array[1];
     var year = array[2];
 
-    console.log(date);
-    console.log(month);
-    console.log(year);
+    if(date <= 1 || date >= 31 || date == '') {
+        console.log("Please enter date correctly");
+    }
+    if(month <= 1 || month >= 12 || month == '') {
+        console.log("Please enter month correctly");   
+    }
+    if(year <= 1000 || year >= 2020 || year == '') {
+        console.log("Please enter year correctly");   
+    }
 
     var sum = date+month+year;
 
@@ -24,8 +30,6 @@ function clickHandler() {
     else {
         console.log("You're unlucky! ")
     }
-
-
 }
 
 
