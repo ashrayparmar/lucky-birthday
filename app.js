@@ -1,4 +1,4 @@
-var inputTxt = document.querySelector("#input");
+var inputTxt = document.querySelector("#dob");
 var btnCheck = document.querySelector("#btn");
 var luckyNum = document.querySelector("#num");
 
@@ -12,23 +12,17 @@ function clickHandler() {
     var month = array[1];
     var year = array[2];
 
-    if(date <= 1 || date >= 31 || date == '') {
-        console.log("Please enter date correctly");
-    }
-    if(month <= 1 || month >= 12 || month == '') {
-        console.log("Please enter month correctly");   
-    }
-    if(year <= 1000 || year >= 2020 || year == '') {
-        console.log("Please enter year correctly");   
-    }
+    if(date == '' || month == '' || year == ''){
+        alert("Please enter your date of birth");
+    }  else if(num == '') {
+        alert("Please enter your lucky number");
+    } 
 
-    var sum = date+month+year;
-
-    if(sum % num == 0) {
-        console.log("You're lucky! ")
-    }
-    else {
-        console.log("You're unlucky! ")
+    let sum = 0;
+    if (date+month+year / num === 0) {
+        console.log("You are lucky bro");
+    } else {
+        console.log("You are unlucky man")
     }
 }
 
