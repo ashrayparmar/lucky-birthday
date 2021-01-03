@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #111827;
+}
+
+.bg {
+  background-image: url("img/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 82vh;
+}
+
+h1 {
+  font-family: "Hanalei Fill", cursive;
+  font-size: 3rem;
+  color: brown;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#dob {
+  border: 2px solid brown;
+  color: white;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  text-align: center;
+}
+
+#num {
+  border: 2px solid brown;
+  color: white;
+  display: block;
+  margin: auto;
+  outline: none;
+  height: 3vh;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#btn {
+  display: block;
+  margin: auto;
+  color: white;
+  border: 2px solid brown;
+  height: 40px;
+  width: 60px;
+  outline: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(145, 72, 72);
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+#output {
+  border: 2px solid white;
+  background-color: #111827;
+  opacity: 0.7;
+  color: black;
+  height: 15vh;
+  width: 30%;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  padding: 1rem 1rem;
+}
+
+footer li {
+  color: brown;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  display: inline-block;
+  padding-inline-start: 0px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+footer ul {
+  padding-inline-start: 0px;
+  text-align: center;
+}
+
+.link {
+  color: rgb(138, 59, 59);
+}
+
+.link:hover {
+  transition: 0.2 ease;
+  color: rgb(156, 149, 149);
+}
