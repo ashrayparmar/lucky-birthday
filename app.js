@@ -1,7 +1,7 @@
 var inputTxt = document.querySelector("#dob");
 var btnCheck = document.querySelector("#btn");
 var luckyNum = document.querySelector("#num");
-var outputDiv = document.querySelector("#output");
+var outputDiv = document.querySelector("#output1")
 
 function clickHandler() {
 
@@ -23,10 +23,10 @@ function clickHandler() {
     sum = date+month+year;
     if (sum % num == 0) {
         var lucky = "You are lucky"
-        outputDiv.innerText = lucky;
+        outputDiv.innerText = lucky
     } else {
         var unlucky = "You are unlucky"
-        outputDiv.innerText = unlucky;
+        outputDiv.innerText = unlucky
     }
 }
 
